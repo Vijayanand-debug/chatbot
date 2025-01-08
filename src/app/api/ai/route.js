@@ -9,7 +9,7 @@ export async function GET(req) {
         'user_id': studentId,
     }
     const formData = new FormData();
-    formData.append('first_name', question);
+    formData.append('userInput', question);
     formData.append('userContext',JSON.stringify(roleData));
  
     const response = await axios.post("https://cygnosislabs.in/", formData);

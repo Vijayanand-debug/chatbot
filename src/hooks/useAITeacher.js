@@ -54,8 +54,6 @@ export const useAITeacher = create((set, get) => ({
     }));
 
     const speech = get().speech;
-    console.log(question);
-    console.log(studentId);
     // Ask AI
     await fetch(`/api/ai?question=${question}&studentId=${studentId}`)
     .then(res =>{
@@ -64,7 +62,7 @@ export const useAITeacher = create((set, get) => ({
 
     })
     .then(aiAnswer =>{
-      message.answer = aiAnswer.data;
+      message.answer = aiAnswer.data.response;
       message.speech = speech;
 
       set(() => ({

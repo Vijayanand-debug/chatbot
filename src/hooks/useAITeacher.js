@@ -103,7 +103,7 @@ export const useAITeacher = create((set, get) => ({
         loading: true,
       }));
       // Get TTS
-      console.log(`message from tts ${JSON.stringify(message.answer)}`);
+      // console.log(`message from tts ${JSON.stringify(message.answer)}`);
       const audioRes = await fetch(
         `/api/tts?teacher=${get().teacher}&text=${message.answer}`
       );

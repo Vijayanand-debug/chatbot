@@ -12,8 +12,8 @@ export async function GET(req) {
     formData.append('userInput', question);
     formData.append('userContext',JSON.stringify(roleData));
  
-    const response = await axios.post("https://cygnosislabs.in/", formData);
-    // const response = await axios.post("http://127.0.0.1:5000/", formData);
+    // const response = await axios.post("https://cygnosislabs.in/", formData);
+    const response = await axios.post("http://127.0.0.1:5000/", formData);
 
     return Response.json(response.data);
 }

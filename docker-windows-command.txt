@@ -5,6 +5,6 @@ from powershell
 docker steps for building and pushing the image to ECR
 
 -- docker build -t roboalabs-talking-head-chatbot .
--- docker tag roboalabs-talking-head-chatbot:latest 631982972732.dkr.ecr.ap-south-1.amazonaws.com/roboalabs-talking-head-chatbot:latest
+-- docker tag roboalabs-talking-head-chatbot:latest 631982972732.dkr.ecr.ap-south-1.amazonaws.com/ai-domain/roboalabs-talking-head-chatbot:latest
 -- login using the powershell command
--- docker push 631982972732.dkr.ecr.ap-south-1.amazonaws.com/roboalabs-talking-head-chatbot:latest
+-- docker push 631982972732.dkr.ecr.ap-south-1.amazonaws.com/ai-domain/roboalabs-talking-head-chatbot:latest

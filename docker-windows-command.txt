@@ -1,0 +1,3 @@
+from powershell
+
+ powershell 'docker login --username AWS -p $(aws ecr get-login-password --region ap-south-1 ) 631982972732.dkr.ecr.ap-south-1.amazonaws.com'

@@ -78,7 +78,7 @@ export const useAITeacher = create((set, get) => ({
     })
     .catch(error=>{
       console.error('Fetch Error: ', error);
-      message.answer = 'Something went wrong';
+      message.answer = 'Sorry! there was a problem answering your question, Feel free to try again in a bit or let me know if you need any help in the meantime!';
       message.speech = speech;
 
       set(() => ({

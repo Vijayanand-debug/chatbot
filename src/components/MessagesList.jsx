@@ -64,14 +64,6 @@ export const MessagesList = () => {
           <div className="flex">
             <div className="flex-grow">
               <div className="flex items-center gap-3">
-                <span
-                  className={`text-white/90 text-2xl font-bold uppercase px-3 py-1 rounded-full  ${message.speech === "formal"
-                    ? "bg-indigo-600"
-                    : "bg-teal-600"
-                    }`}
-                >
-                  {message.speech}
-                </span>
                 <h4 className="text-6xl font-bold text-white/90 italic">{message.answer}</h4>
               </div>
 

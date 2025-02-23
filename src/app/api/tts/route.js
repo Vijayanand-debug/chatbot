@@ -39,7 +39,6 @@ export async function GET(req){
         resolve(bufferStream);
       },
       (error) => {
-        console.log(error);
         speechSynthesizer.close();
         reject(error);
       }

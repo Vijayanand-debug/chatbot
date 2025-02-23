@@ -61,11 +61,11 @@ export const Experience = () => {
 
     return (
         <>
-            <div className="z-10 md:justify-center fixed bottom-4 left-4 right-4 flex gap-3 flex-wrap justify-stretch">
+            <div className="z-10 md:justify-center fixed bottom-1 left-1 right-1 flex gap-3 flex-wrap justify-stretch">
                 <TypingBox />
             </div>
             <Canvas camera={{
-                position: [0, 0, 0.0001],
+                position: [0, 0, 1],
             }}>
                 <CameraManager />
                 <Html
@@ -79,11 +79,11 @@ export const Experience = () => {
                 <Environment preset="sunset" />
                 <ambientLight intensity={0.8} color="blue" />
                 <Teacher teacher={"Nanami"}
-                    position={[-0.8, -1.7, -3]}
+                    position={[-1, -1.7, -3]}
                     scale={1.5}
                     rotation-y={degToRad(20)}
                 />
-                <Gltf src="/models/classroom_default.glb" position={[0.2, -1.7, -2]} />
+                <Gltf src="/models/classroom_default.glb" position={[0.1, -1.7, -1]} />
 
             </Canvas>
 

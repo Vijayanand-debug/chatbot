@@ -8,3 +8,13 @@ docker steps for building and pushing the image to ECR
 -- docker tag roboalabs-talking-head-chatbot:latest 631982972732.dkr.ecr.ap-south-1.amazonaws.com/ai-domain/roboalabs-talking-head-chatbot:latest
 -- login using the powershell command
 -- docker push 631982972732.dkr.ecr.ap-south-1.amazonaws.com/ai-domain/roboalabs-talking-head-chatbot:latest
+
+on Ec2 instance:
+-- connect to the instance
+-- authenticate the user on the terminal, using ecr login commands
+-- docker ps (displays all the containers)
+-- docker stop container-name
+-- docker rm container-name
+-- docker pull 631982972732.dkr.ecr.ap-south-1.amazonaws.com/ai-domain/roboalabs-talking-head-chatbot:latest
+-- docker run -d --name chatbot -p 3000:3000 631982972732.dkr.ecr.ap-south-1.amazonaws.com/ai-domain/roboalabs-talking-head-chatbot:latest
+

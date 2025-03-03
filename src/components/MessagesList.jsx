@@ -21,7 +21,7 @@ export const MessagesList = () => {
 
   return (
     <div
-      className={`w-[100%] h-[60%] p-8 flex flex-col space-y-8 bg-transparent opacity-80`} style={{ overflow: "scroll", marginTop: "15px" }}
+      className={`w-[100%] h-[60%] p-8 flex flex-col space-y-8 bg-transparent opacity-80`} style={{ overflow: "scroll", marginTop: "15px", scrollbarWidth: "none" }}
       ref={container}
     >
       {

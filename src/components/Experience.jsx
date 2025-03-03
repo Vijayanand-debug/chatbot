@@ -63,8 +63,8 @@ export const Experience = () => {
                 <Environment preset="sunset" />
                 <ambientLight intensity={0.8} color="blue" />
                 <Teacher teacher={"Nanami"}
-                    position={[0, -3.1, -3]}
-                    scale={1.5}
+                    position={[0, -3.5, -3]}
+                    scale={2}
                 />
                 {/* <Gltf src="/models/classroom_default.glb" position={[0.1, -1.7, -1]} /> */}
 

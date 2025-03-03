@@ -8,7 +8,7 @@ export default function Home() {
   
   return (
     <main className="h-screen min-h-screen">
-       <Suspense fallback={<div>Loading Experience...</div>}>
+       <Suspense fallback={<div>Loading ...</div>}>
         <Experience />
       </Suspense>
     </main>

@@ -11,6 +11,7 @@ export const TypingBox = () => {
   const [errorMessage, setErrorMessage] = useState(""); // New state to hold error messages
   const inputRef = useRef(null); // Create a ref for the input field
 
+
   // Initialize the speech recognition API
   const recognition = typeof window !== "undefined" && (window.SpeechRecognition || window.webkitSpeechRecognition)
     ? new (window.SpeechRecognition || window.webkitSpeechRecognition)()
@@ -80,7 +81,7 @@ export const TypingBox = () => {
       </div>
 
       {loading ? (
-        <div className="flex justify-center items-center">
+        <div className="flex justify-center items-center" style={{ width: "90vw" }}>
           <span className="relative flex h-4 w-4">
             <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-white opacity-75"></span>
             <span className="relative inline-flex rounded-full h-4 w-4 bg-white"></span>

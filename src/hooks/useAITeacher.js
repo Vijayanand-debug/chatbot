@@ -45,6 +45,7 @@ export const useAITeacher = create((set, get) => ({
     if (!question) {
       return;
     }
+   
     const message = {
       question,
       id: get().messages.length,
